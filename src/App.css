@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Added: Use flexbox to center content */
+    justify-content: center; /* Added: Center horizontally */
+    align-items: center; /* Added: Center vertically */
+    height: 100vh; /* Added: Full viewport height */
+    margin: 0; /* Added: Remove default margin */
+    background-color: #5a5757; /* Added: Light gray background for contrast */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Card Styles */
+.card {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    background-color:#ffbd59;
+    margin: 10px;
+    user-select: none;
+    text-align: center;
+}
+
+
+/* Board Styles */
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/* Game Styles */
+.game {
+    text-align: center;
+}
+
+
+/* Modal Styles */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal-backdrop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: rgb(158, 153, 153);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: translateY(-50px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-backdrop.show .modal-content {
+  transform: translateY(0);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Instruction Box Styles */
+.instruction-box {
+  padding: 15px;
+  border: 1px solid #ccc4c4;
+  border-radius: 5px;
+  background-color: #8a8484;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
