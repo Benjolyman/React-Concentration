@@ -1,12 +1,12 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
-    display: flex; /* Added: Use flexbox to center content */
-    justify-content: center; /* Added: Center horizontally */
-    align-items: center; /* Added: Center vertically */
-    height: 100vh; /* Added: Full viewport height */
-    margin: 0; /* Added: Remove default margin */
-    background-color: #5a5757; /* Added: Light gray background for contrast */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+    background-color: #5a5757; 
 }
 
 h1 {
@@ -19,7 +19,7 @@ button {
     cursor: pointer;
 }
 
-/* Card Styles */
+
 .card {
     width: 60px;
     height: 60px;
@@ -36,7 +36,7 @@ button {
 }
 
 
-/* Board Styles */
+
 .board {
     display: grid;
     grid-template-columns: repeat(4, 80px);
@@ -45,13 +45,13 @@ button {
     margin: 20px auto;
 }
 
-/* Game Styles */
+
 .game {
     text-align: center;
 }
 
 
-/* Modal Styles */
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -97,7 +97,7 @@ button {
   cursor: pointer;
 }
 
-/* Instruction Box Styles */
+
 .instruction-box {
   padding: 15px;
   border: 1px solid #ccc4c4;

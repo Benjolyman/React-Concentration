@@ -12,11 +12,10 @@ const App = () => {
     }, []);
 
     const initializeGame = () => {
-        // Create a deck of 16 cards (8 pairs). Each card has a unique id and a value between 1 and 8.
         const deck = Array.from({ length: 16 }, (_, i) => ({
             id: i, // Assign a unique id to each card, using the index (i) as the id.
             value: (i % 8) + 1, // Assign values 1 to 8, repeating twice.
-            isFlipped: false, // Initialize all cards with isFlipped set to false (not flipped).
+            isFlipped: false, 
         })).sort(() => Math.random() - 0.5); // Shuffle the deck randomly.
 
         // Update the state with the shuffled deck of cards.
@@ -25,7 +24,7 @@ const App = () => {
         // Reset the state for flipped cards to an empty array (no cards are flipped at the start).
         setFlippedCards([]);
 
-        // Reset the matched pairs count to 0 (no pairs are matched at the start).
+        
         setMatchedPairs(0);
     };
 
