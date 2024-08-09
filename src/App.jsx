@@ -13,18 +13,15 @@ const App = () => {
 
     const initializeGame = () => {
         const deck = Array.from({ length: 16 }, (_, i) => ({
-            id: i, // Assign a unique id to each card, using the index (i) as the id.
-            value: (i % 8) + 1, // Assign values 1 to 8, repeating twice.
+            id: i, 
+            value: (i % 8) + 1, 
             isFlipped: false, 
-        })).sort(() => Math.random() - 0.5); // Shuffle the deck randomly.
+        })).sort(() => Math.random() - 0.5); 
 
-        // Update the state with the shuffled deck of cards.
         setCards(deck);
 
-        // Reset the state for flipped cards to an empty array (no cards are flipped at the start).
         setFlippedCards([]);
 
-        
         setMatchedPairs(0);
     };
 
@@ -32,19 +29,21 @@ const App = () => {
         if (flippedCards.includes(id)) {
             return;
         }
-
+    
         const newFlippedCards = [...flippedCards, id];
+    
         const newCards = cards.map((card) =>
             card.id === id ? { ...card, isFlipped: true } : card
         );
-
+    
         setCards(newCards);
-
+    
         if (newFlippedCards.length === 2) {
             const [firstId, secondId] = newFlippedCards;
+            
             const firstCard = newCards.find((card) => card.id === firstId);
             const secondCard = newCards.find((card) => card.id === secondId);
-
+    
             if (firstCard.value === secondCard.value) {
                 setMatchedPairs((prev) => prev + 1);
                 setFlippedCards([]);
@@ -58,12 +57,14 @@ const App = () => {
                         )
                     );
                     setFlippedCards([]);
-                }, 1000);
+                }, 1000); 
             }
         } else {
+           
             setFlippedCards(newFlippedCards);
         }
     };
+    
 
     const toggleModal = () => {
         setIsModalVisible(!isModalVisible);

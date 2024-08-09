@@ -2,26 +2,27 @@
 
 The Concentration game, also known as Memory or Matching Pairs, is a simple card-matching game where the objective is to find all the pairs of matching cards. The game is designed to test and improve your memory skills by challenging you to remember the locations of cards and find all the matching pairs with the fewest number of attempts.
 
-![alt text](image.png)
+![game](image.png)
 
 ## How the Game Works
 
-- The game starts with a grid of cards laid out face down.
-- Each card has a matching pair hidden somewhere on the board.
-- You can flip two cards at a time by clicking on them.
-- If the two cards match, they remain face up.
-- If they don’t match, they flip back over after a brief delay.
-- The game continues until all pairs have been matched.
-- The game tracks the number of pairs you’ve matched, and the goal is to match all pairs in the fewest number of moves.
+-   The game starts with a grid of cards laid out face down.
+-   Each card has a matching pair hidden somewhere on the board.
+-   You can flip two cards at a time by clicking on them.
+-   If the two cards match, they remain face up.
+-   If they don’t match, they flip back over after a brief delay.
+-   The game continues until all pairs have been matched.
+-   The game tracks the number of pairs you’ve matched, and the goal is to match all pairs in the fewest number of moves.
 
 ## Installation
 
-1. Clone this repository: 
+1. Clone this repository:
 
 ```
 git clone https://github.com/Benjolyman/React-Concentration
 ```
-2. Install dependencies: 
+
+2. Install dependencies:
 
 ```
 npm i
@@ -29,19 +30,19 @@ npm i
 
 ## Usage
 
-1. Start server 
+1. Start server
 
 ```
 npm run dev
 ```
 
-2. access the application, typically through 
+2. access the application, typically through
 
 ```
  http://localhost:5173
 ```
 
-## Technologies/Frameworks Used
+## Technologies Used
 
     React: A JavaScript library for building user interfaces.
     JavaScript: The programming language used to build the game logic.
